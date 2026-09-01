@@ -1,3 +1,11 @@
+.logo {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #b57f5f;
+  text-transform: lowercase;
+}
 * {
   box-sizing: border-box;
 }
