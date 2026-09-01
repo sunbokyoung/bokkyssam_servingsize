@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>비밀 도어락</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="screen">
+    <div class="app-card">
+      <div class="doorlock-panel">
+        <h1>DOOR LOCK</h1>
+        <p class="guide">비밀번호를 입력하세요</p>
+
+        <div id="display" class="display">----</div>
+
+        <div class="keypad">
+          <button onclick="pressNumber('1')">1</button>
+          <button onclick="pressNumber('2')">2</button>
+          <button onclick="pressNumber('3')">3</button>
+          <button onclick="pressNumber('4')">4</button>
+          <button onclick="pressNumber('5')">5</button>
+          <button onclick="pressNumber('6')">6</button>
+          <button onclick="pressNumber('7')">7</button>
+          <button onclick="pressNumber('8')">8</button>
+          <button onclick="pressNumber('9')">9</button>
+          <button onclick="clearInput()">C</button>
+          <button onclick="pressNumber('0')">0</button>
+          <button onclick="checkPassword()">OK</button>
+        </div>
+
+        <p id="result" class="result"></p>
+      </div>
+
+      <div class="message-stage">
+        <div class="door-wrapper" id="doorWrapper">
+          <div class="door left-door"></div>
+          <div class="door right-door"></div>
+
+          <div class="secret-message">
+  <h2 id="messageTitle">문이 열렸습니다</h2>
+  <p id="messageText">여기에 랜덤 메시지가 표시됩니다.</p>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
